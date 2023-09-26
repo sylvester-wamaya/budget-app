@@ -1,12 +1,17 @@
 <div id="<%= dom_id group %>">
   <p>
-    <strong>Name:</strong>
-    <%= group.name %>
+
+    <%= link_to group.name, group %>
   </p>
 
   <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
+
+    <%= image_tag(group.icon, style: "height: 40px; width: 40px;") %>
+  </p>
+
+    <p>
+
+    <%= group.payments.reduce(0) { |sum, payment| sum + payment.amount } %>
   </p>
 
 </div>
