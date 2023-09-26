@@ -3,5 +3,5 @@ class Group < ApplicationRecord
   validates :icon, presence: true
 
   has_many :payments, dependent: :destroy
-  belongs_to :user, foreign_key: :author_id
+  belongs_to :user
 end
