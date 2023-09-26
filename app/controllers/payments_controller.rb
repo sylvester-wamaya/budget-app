@@ -3,6 +3,7 @@ class PaymentsController < ApplicationController
   def index
     @payments = Payment.all
   end
+
   def show
     @payment = Payment.find(params[:id])
   end
@@ -48,7 +49,6 @@ class PaymentsController < ApplicationController
 
   # DELETE /payments/1 or /payments/1.json
   def destroy
-   
     @payment.destroy
 
     respond_to do |format|

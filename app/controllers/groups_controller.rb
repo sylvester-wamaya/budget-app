@@ -4,7 +4,6 @@ class GroupsController < ApplicationController
   # GET /groups or /groups.json
   def index
     @groups = current_user.groups
-   
   end
 
   # GET /groups/1 or /groups/1.json
@@ -16,8 +15,6 @@ class GroupsController < ApplicationController
   # GET /groups/new
   def new
     @group = Group.new
-    @icons = {icon:'app/assets/images/p1.jpg', icon:'app/assets/images/p1.jpg', icon:'app/assets/images/p1.jpg', }
-    
   end
 
   # GET /groups/1/edit
