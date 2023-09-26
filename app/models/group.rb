@@ -4,5 +4,4 @@ class Group < ApplicationRecord
 
   has_many :payments, dependent: :destroy
   belongs_to :user, foreign_key: :author_id
-
 end
