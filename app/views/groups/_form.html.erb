@@ -18,12 +18,22 @@
 
   <div>
     <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
-  </div>
+     <div class="icon-options">
+              <%= form.radio_button :icon, "p1.jpg", id: "icon1", class: "d-none" %>
+              <%= label_tag "icon1", image_tag("p1.jpg", style: "height: 40px; width: 40px;"), class: "icon-label" %>
 
-  <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
+              <%= form.radio_button :icon, "p1.jpg", id: "icon2", class: "d-none" %>
+              <%= label_tag "icon2", image_tag("p1.jpg", style: "height: 40px; width: 40px;"), class: "icon-label" %>
+
+              <%= form.radio_button :icon, "p1.jpg", id: "icon3", class: "d-none" %>
+              <%= label_tag "icon3", image_tag("p1.jpg", style: "height: 40px; width: 40px;"), class: "icon-label" %>
+
+              <%= form.radio_button :icon, "p1.jpg", id: "icon4", class: "d-none" %>
+              <%= label_tag "icon4", image_tag("p1.jpg", style: "height: 40px; width: 40px;"), class: "icon-label" %>
+
+              <%= form.radio_button :icon, "p1.jpg", id: "icon5", class: "d-none" %>
+              <%= label_tag "icon5", image_tag("p1.jpg", style: "height: 40px; width: 40px;"), class: "icon-label" %>
+            </div>
   </div>
 
   <div>

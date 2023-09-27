@@ -1,10 +1,30 @@
 <p style="color: green"><%= notice %></p>
-
+ <%= link_to "Back to groups", groups_path %>
 <%= render @group %>
+<%@payments.each do |payment|%>
+  <div id="<%= dom_id payment %>">
+  <p>
+  
+    <%= payment.name %>
+  </p>
+
+  <p>
+  
+    <%= payment.amount %>
+  </p>
+  <p>
+   
+    <%= payment.created_at.strftime("%Y-%m-%d %H:%M") %>
+  </p>
+
+</div>
+
+<%end%>
 
 <div>
-  <%= link_to "Edit this group", edit_group_path(@group) %> |
-  <%= link_to "Back to groups", groups_path %>
+<%= link_to "New payment", new_group_payment_path(@group) %>
 
-  <%= button_to "Destroy this group", @group, method: :delete %>
+ 
+
+ 
 </div>
