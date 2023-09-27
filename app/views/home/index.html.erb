@@ -1,0 +1,14 @@
+
+ <%= image_tag("logo.png", alt: "logo", class: "logo") %>
+<% if user_signed_in? %>
+        <%= form_with url: destroy_user_session_path, method: :delete do %>
+          <%= submit_tag 'Logout' %>
+        <% end %>
+      <% else %>
+      
+          <%= link_to "LOG IN", new_user_session_path%>
+       
+    
+          <%= link_to "SIGN UP", new_user_registration_path %>
+      
+      <% end %>
