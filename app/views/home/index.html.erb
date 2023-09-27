@@ -1,14 +1,18 @@
-
+<section class="mobile-frame hm">
  <%= image_tag("logo.png", alt: "logo", class: "logo") %>
 <% if user_signed_in? %>
         <%= form_with url: destroy_user_session_path, method: :delete do %>
-          <%= submit_tag 'Logout' %>
+        <%= link_to "Back", groups_path, class:"hm-btn col-white" %>
+          <%= submit_tag 'Logout',class:"hm-btn col-white" %>
         <% end %>
       <% else %>
-      
-          <%= link_to "LOG IN", new_user_session_path%>
+      <div class="hm-btn">
+          <%= link_to "LOG IN", new_user_session_path, class:"col-white"%>
+        </div>
        
-    
-          <%= link_to "SIGN UP", new_user_registration_path %>
+    <div class="hm-btn">
+          <%= link_to "SIGN UP", new_user_registration_path, class:"col-white" %>
+        </div>
       
       <% end %>
+</section>
