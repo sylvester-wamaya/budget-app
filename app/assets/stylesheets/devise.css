@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #5fb523;
+    background-color: #3778c2;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -10,21 +10,29 @@
 }
 .input{
     padding: 10px;
-    
     border-radius: 5px;
     border: 1px solid #5fb523;
     width: 100%;
-   
 }
 label{
-    font-weight: bold;
-   
+    font-weight: bold;  
 }
 .field{
-display: flex;
-flex-direction: column;
 align-items: start;
 justify-content: center;
 margin: 10px;
 
+}
+.border{
+    border: 1px solid #fff;
+    padding: 10px 120px;
+    border-radius: 5px;
+}
+i{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+i:hover{
+    scale: 1.2;
 }
