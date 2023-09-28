@@ -1,6 +1,8 @@
 <section class="mobile-frame">
 <div class="nav">
-<%= link_to "back", root_path, class:"col-white" %>
+<%= link_to root_path do %>
+<i class="fas fa-arrow-left"></i>
+<% end %>
 <h2>Sign Up</h2>
 
 </div>
@@ -31,8 +33,8 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"input" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Submit", class:"col-white hm-btn" %>
+  <div class="hm-btn btm">
+    <%= f.submit "Submit", class:"col-white border logout" %>
   </div>
 <% end %>
 

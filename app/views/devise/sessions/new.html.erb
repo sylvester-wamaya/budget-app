@@ -1,6 +1,9 @@
 <section class="mobile-frame">
 <div class='nav'>
-<%= link_to "back", root_path, class:"col-white" %>
+<%= link_to root_path do %>
+<i class="fas fa-arrow-left"></i>
+<% end %>
+
 <h2>Log in</h2>
 </div>
 
@@ -22,8 +25,8 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in",class:"col-white hm-btn" %>
+  <div class="hm-btn btm">
+    <%= f.submit "Log in",class:"col-white border logout" %>
   </div>
 <% end %>
 
