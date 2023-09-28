@@ -1,17 +1,22 @@
 <section class="mobile-frame hm">
  <%= image_tag("logo.png", alt: "logo", class: "logo") %>
 <% if user_signed_in? %>
+<div class='hm-btn'>
+<%= link_to "Back", groups_path, class:"border col-white" %>
+</div>
+
         <%= form_with url: destroy_user_session_path, method: :delete do %>
-        <%= link_to "Back", groups_path, class:"hm-btn col-white" %>
-          <%= submit_tag 'Logout',class:"hm-btn col-white" %>
+        <div class='hm-btn'>
+          <%= submit_tag 'Logout',class:"border col-white logout" %>
+        </div>
         <% end %>
       <% else %>
       <div class="hm-btn">
-          <%= link_to "LOG IN", new_user_session_path, class:"col-white"%>
+          <%= link_to "LOG IN", new_user_session_path, class:"col-white border"%>
         </div>
        
     <div class="hm-btn">
-          <%= link_to "SIGN UP", new_user_registration_path, class:"col-white" %>
+          <%= link_to "SIGN UP", new_user_registration_path, class:"col-white border" %>
         </div>
       
       <% end %>
