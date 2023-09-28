@@ -1,12 +1,33 @@
-<p style="color: green"><%= notice %></p>
+<section class="mobile-frame">
 
+<div class='nav'>
+<%= link_to root_path do %>
+<i class="fas fa-arrow-left"></i>
+<% end %>
 <h1>Groups</h1>
 
-<div id="groups">
+
+
+<%=form_with url: destroy_user_session_path, method: :delete do %>
+<%= submit_tag 'Logout',class:"col-white logout b-none" %>
+<%end%>
+
+
+</div>
+<p style="color: green"><%= notice %></p>
+<div class="g-overflow">
   <% @groups.each do |group| %>
+  
+   <%= link_to group_path(group) do %>
+   <li>
     <%= render group %>
+    </li>
+    <% end %>
+   
 
   <% end %>
 </div>
-
-<%= link_to "New group", new_group_path %>
+<div class="hm-btn btm">
+<%= link_to "New group", new_group_path, class:"col-white border" %>
+</div>
+</section>

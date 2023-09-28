@@ -8,16 +8,11 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-        <% if user_signed_in? %>
-        <%= form_with url: destroy_user_session_path, method: :delete do %>
-          <%= submit_tag 'Logout', class: "btn btn-primary w-100" %>
-        <% end %>
-        <% end %>
+
     <%= yield %>
   </body>
 </html>
