@@ -1,9 +1,21 @@
+ <section class='mobile-frame'>
+ <div class='nav'>
+ <%= link_to groups_path do %>
+ <i class="fas fa-arrow-left"></i>
+    <% end %>
+
 <h1>New group</h1>
+<%= form_with url: destroy_user_session_path, method: :delete do %>
+<%= submit_tag "Logout", class: "col-white logout b-none" %>
+<% end %>
+</div>
 
 <%= render "form", group: @group %>
+</section>
 
-<br>
 
-<div>
-  <%= link_to "Back to groups", groups_path %>
-</div>
+
+
+
+ 
+
