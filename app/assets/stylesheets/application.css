@@ -33,19 +33,26 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
-.mobile-frame {
+.mobile-frame {  
+  margin: 10px auto;
+  width: 375px;
+  height: 97vh;
+  border: 10px solid #000;
+  border-top-width: 45px;
+  border-bottom-width: 45px;
+  box-shadow: 0 0 30px gray;
+  border-radius: 25px;
   position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 375px;
-  max-height: 667px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #e6e6e6;
-  padding: 20px;
+
+}
+.btm{
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 0;
+ outline: none;
+ border-radius: 0;
+
 }
 /*---------------------------------------------*/
