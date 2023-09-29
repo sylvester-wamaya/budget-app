@@ -78,7 +78,7 @@ Please click <a href="https://budget-iuue.onrender.com/" target="_blank">here</a
 
 ### 🔭 Video Presentation <a name="video"></a>
 
-Please click <a href="https://youtu.be/GuNyhHLVo-c" target="_blank">here</a> to watch video presentation of the project
+Please click <a href="https://www.loom.com/share/7eae92da126b4b6aa3a0978022c6d896" target="_blank">here</a> to watch video presentation of the project
 
 <!-- GETTING STARTED -->
 
