@@ -4,7 +4,7 @@ databases:
 
 services:
   - type: web
-    name: rails
+    name: budget
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
