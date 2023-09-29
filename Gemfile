@@ -79,5 +79,5 @@ group :test do
 end
 
 gem 'database_cleaner'
-gem 'devise'
+
 gem 'rails-controller-testing'

@@ -20,8 +20,6 @@ RSpec.feature 'Payments', type: :feature do
     fill_in 'Name', with: 'Test payment'
     fill_in 'Amount', with: 100
 
-    
-
     click_button 'Submit'
 
     expect(page).to have_text('Test payment')
