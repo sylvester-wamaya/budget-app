@@ -15,7 +15,7 @@ RSpec.feature 'Groups', type: :feature do
 
     fill_in 'Name', with: 'Test Group'
     choose('icon1')
-    click_button 'Submit'
+    click_button 'Save'
 
     expect(page).to have_text('Test Group')
   end
