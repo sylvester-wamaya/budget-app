@@ -1,0 +1,51 @@
+<section class="mobile-frame">
+
+<div class='nav'>
+<%= link_to groups_path do %>
+<i class="fas fa-arrow-left"></i>
+<% end %>
+
+<h1>Transactions</h1>
+<%=form_with url: destroy_user_session_path, method: :delete do %>
+<%= submit_tag 'Logout',class:"col-white logout b-none" %>
+<%end%>
+</div>
+<p style="color: green"><%= notice %></p>
+<div class='group-payt'>
+
+<%= render @group %>
+</div>
+<div class='overflow'>
+<%@payments.each do |payment|%>
+  
+  <li class='li-payt'>
+<div class='payt'>
+  <span>
+    <%= payment.name %>
+  </span>
+
+
+  
+   <span>$
+    <%= payment.amount %>
+  </span>
+  
+  </div>
+   <small>
+    <%= payment.created_at.strftime("%Y-%m-%d %H:%M") %>
+  </small>
+  </li>
+
+
+
+<%end%>
+</div>
+<div class='hm-btn btm'>
+<%= link_to "New payment", new_group_payment_path(@group), class:'col-white border' %>
+
+ 
+
+ 
+</div>
+</section>
+

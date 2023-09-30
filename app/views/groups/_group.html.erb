@@ -1,0 +1,11 @@
+<div class="group">
+ 
+ <%= image_tag(group.icon, class:'icon') %>
+ <span>
+    <%=group.name %>
+  </span>
+<span>$
+    <%= group.payments.reduce(0) { |sum, payment| sum + payment.amount } %>  
+  </span>
+
+</div>

@@ -1,0 +1,15 @@
+<section class="mobile-frame">
+<div class='nav'>
+ <%= link_to group_path(@group) do %>
+ <i class="fas fa-arrow-left"></i>
+    <% end %>
+<h1>New payment</h1>
+
+<%= form_with url: destroy_user_session_path, method: :delete do %>
+<%= submit_tag "Logout", class: "col-white logout b-none" %>
+<% end %>
+</div>
+
+<%= render "form", payment: @group_payments_path %>
+
+</section>

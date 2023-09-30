@@ -1,0 +1,16 @@
+
+<%=form_with model: current_user.payments.build, url: group_payments_path(@group), html: {class: 'form-control'} do |form|%>
+   <div class='field'>
+    <%= form.label :name, class: "label" %>
+    <%= form.text_field :name, class:'input' %>
+  </div>
+
+  <div class='field'>
+    <%= form.label :amount, class: "label"%>
+    <%= form.text_field :amount, class:'input' %>
+  </div>
+
+  <div class='btm hm-btn'>
+    <%= form.submit 'Save', class:'col-white border logout' %>
+  </div>
+<% end %>
