@@ -1,7 +1,6 @@
 class PaymentsController < ApplicationController
   before_action :authenticate_user!
   load_and_authorize_resource
-  load_and_authorize_resource
   before_action :set_payment, only: %i[show edit update destroy]
   def index
     @payments = Payment.all
